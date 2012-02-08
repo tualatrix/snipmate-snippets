@@ -719,6 +719,8 @@ snippet source
 	<source src="${1}" type="${2}" media="${3}" />${4}
 snippet span
 	<span>${1}</span>${2}
+snippet span.
+	<span class="${1}">${2}</span>${3}
 snippet strong
 	<strong>${1}</strong>${2}
 snippet style
@@ -781,11 +783,17 @@ snippet tr
 	<tr>
 		${1}
 	</tr>${2}
+snippet tr.
+	<tr class="${1}">
+		${2}
+	</tr>${3}
+
 snippet tr+
 	<tr>
 		<td>${1}</td>
 		td+${2}
 	</tr>
+
 snippet track
 	<track src="${1}" srclang="${2}" label="${3}" default="${4:default}>${5}</track>${6}
 snippet ul
