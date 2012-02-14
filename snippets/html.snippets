@@ -655,11 +655,15 @@ snippet optgroup
 snippet output
 	<output>${1}</output>${2}
 snippet p
-	<p>${1}</p>${2}
+	<p>${1}</p>
+snippet p#
+	<p id="${1}">${2}</p>
 snippet p.
 	<p class="${1}">${2}</p>
+
 snippet param
 	<param name="${1}" value="${2}" />${3}
+
 snippet pre
 	<pre>
 		${1}
@@ -708,6 +712,7 @@ snippet select.
 	<select name="${1}" id="${2:$1}" class="${3}>
 		${4}
 	</select>
+
 snippet select+
 	<select name="${1}" id="${2:$1}">
 		<option value="${3}">${4:$3}</option>

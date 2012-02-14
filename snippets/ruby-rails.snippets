@@ -1,25 +1,41 @@
+snippet ar
+	assert_response :${1:success}
+
+snippet ae
+	assert_equal ${1}, ${2}
+
 snippet art
 	assert_redirected_to ${1::action => "${2:index}"}
+
+
 snippet artnp
 	assert_redirected_to ${1:parent}_${2:child}_path(${3:@$1}, ${4:@$2})
+
 snippet artnpp
 	assert_redirected_to ${1:parent}_${2:child}_path(${3:@$1})
+
 snippet artp
 	assert_redirected_to ${1:model}_path(${2:@$1})
+
 snippet artpp
 	assert_redirected_to ${1:model}s_path
+
 snippet asd
 	assert_difference "${1:Model}.${2:count}", $1 do
 		${3}
 	end
+
 snippet asnd
 	assert_no_difference "${1:Model}.${2:count}" do
 		${3}
 	end
+
 snippet asre
 	assert_response :${1:success}, @response.body${2}
+
 snippet asrj
 	assert_rjs :${1:replace}, "${2:dom id}"
+
 snippet ass
 	assert_select '${1:path}', :${2:text} => '${3:inner_html' ${4:do}
 snippet bf
@@ -308,6 +324,9 @@ snippet tre
 	${3}
 snippet tref
 	t.references :${1:model}
+snippet vd
+	validates ${1}
+
 snippet va
 	validates_associated :${1:attribute}
 snippet vao
@@ -326,6 +345,11 @@ snippet vn
 	validates_numericality_of :${1:attribute}
 snippet vpo
 	validates_presence_of :${1:attribute}
+
+snippet pre
+	presence: true
+snippet uni
+	uniqueness: true
 snippet vu
 	validates_uniqueness_of :${1:attribute}
 snippet wants
